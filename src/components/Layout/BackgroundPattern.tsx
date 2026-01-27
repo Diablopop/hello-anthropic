@@ -1,22 +1,13 @@
-interface BackgroundPatternProps {
-  patternUrl?: string;
-}
-
-export default function BackgroundPattern({ patternUrl }: BackgroundPatternProps) {
-  if (!patternUrl) {
-    return (
-      <div className="fixed inset-0 -z-10 bg-black" />
-    );
-  }
-
+export default function BackgroundPattern() {
   return (
     <div
       className="fixed inset-0 -z-10"
       style={{
-        backgroundImage: `url(${patternUrl})`,
+        backgroundImage: `url(/assets/bg-image-seamless.webp)`,
         backgroundRepeat: 'repeat',
         backgroundAttachment: 'fixed',
         backgroundSize: 'auto',
+        backgroundColor: '#000',
       }}
     />
   );
