@@ -22,7 +22,7 @@ export function triggerLargeCelebration() {
   const defaults = {
     origin: { y: 0.5 },
     colors: ['#00FF00', '#00AA00', '#00FF00'],
-    shapes: ['square'],
+    shapes: ['square' as confetti.Shape],
     ticks: 200,
   };
 
