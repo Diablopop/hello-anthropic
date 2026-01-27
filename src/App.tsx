@@ -6,6 +6,7 @@ import CTA from './components/CTA';
 import TrackerCard from './components/TrackerCard/TrackerCard';
 import TrackerDrawer from './components/TrackerCard/TrackerDrawer';
 import PrototypeViewer from './components/PrototypeViewer/PrototypeViewer';
+import { SOCIAL_LINKS, RESUME_FILENAME } from './utils/constants';
 
 function App() {
   return (
@@ -108,13 +109,13 @@ function App() {
             </p>
             <div className="ml-4 space-y-4">
               <div className="flex flex-wrap gap-4">
-                <CTA href="https://linkedin.com/in/yourprofile">
+                <CTA href={SOCIAL_LINKS.linkedin}>
                   LinkedIn
                 </CTA>
-                <CTA href="https://github.com/yourusername">
+                <CTA href={SOCIAL_LINKS.github}>
                   GitHub
                 </CTA>
-                <CTA href="/assets/resume.pdf" download="Andrew_Schauer_Resume.pdf">
+                <CTA href="/assets/resume.pdf" download={RESUME_FILENAME}>
                   Download Resume
                 </CTA>
               </div>
