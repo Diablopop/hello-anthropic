@@ -22,9 +22,9 @@ function App() {
           {/* Terminal Header */}
           <div className="text-terminal-green terminal-glow">
             <pre className="text-base sm:text-lg">
-{`╔══════════════════════════════════╗
-║        HELLO, ANTHROPIC          ║
-╚══════════════════════════════════╝`}
+{`╔════════════════════════════╗
+║     HELLO, ANTHROPIC       ║
+╚════════════════════════════╝`}
             </pre>
           </div>
 
