@@ -118,7 +118,7 @@ export default function TrackerDrawer() {
                   <div>
                     <p className="opacity-70 text-xs">Status</p>
                     <motion.p
-                      className={`text-base font-bold ${getStatusColor()}`}
+                      className={`text-base font-bold ${getStatusColor()} whitespace-nowrap`}
                       animate={statusJustChanged ? { scale: [1, 1.2, 1] } : {}}
                       transition={{ duration: 0.3 }}
                     >

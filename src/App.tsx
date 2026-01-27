@@ -38,7 +38,7 @@ function App() {
                My name is Andrew, and I'm applying for the role of
                 "Product Manager, Claude Code Growth."
               </p>
-              <p className="text-base sm:text-lg opacity-90">
+              <p className="text-base sm:text-xl opacity-90">
                 I've spent the past few years at the intersection of product,
                 growth, and developer tools. Claude Code represents something
                 special—a chance to shape how millions of developers will
@@ -61,7 +61,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               WHY ME
             </p>
-            <div className="space-y-4 text-base sm:text-lg opacity-90">
+            <div className="space-y-4 text-base sm:text-xl opacity-90">
               <p>
                 [PLACEHOLDER: Add your compelling copy about why you're
                 interested in this specific role and what you bring to the table]
@@ -86,7 +86,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               VISION
             </p>
-            <div className="space-y-6 text-base sm:text-lg opacity-90">
+            <div className="space-y-6 text-base sm:text-xl opacity-90">
 
               <p>
                 I've been so inspired, I started designing a Claude Code enterprise B2B product that could help non-engineers use the incredible power of persistent context and MCPs.

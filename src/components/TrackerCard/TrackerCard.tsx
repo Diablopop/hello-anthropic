@@ -81,7 +81,7 @@ export default function TrackerCard() {
           <div>
             <p className="opacity-70">Status</p>
             <motion.p
-              className={`text-sm font-bold ${getStatusColor()}`}
+              className={`text-sm font-bold ${getStatusColor()} whitespace-nowrap`}
               animate={statusJustChanged ? { scale: [1, 1.2, 1] } : {}}
               transition={{ duration: 0.3 }}
             >
