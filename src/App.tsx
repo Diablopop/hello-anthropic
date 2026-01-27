@@ -21,31 +21,35 @@ function App() {
 
           {/* Terminal Header */}
           <div className="text-terminal-green terminal-glow">
-            <pre className="text-sm sm:text-base">
-{`╔══════════════════════════════════════════════════════════╗
-║           ANTHROPIC - CLAUDE CODE PITCH v1.0            ║
-╚══════════════════════════════════════════════════════════╝`}
+            <pre className="text-base sm:text-lg">
+{`╔══════════════════════════════════╗
+║        HELLO, ANTHROPIC          ║
+╚══════════════════════════════════╝`}
             </pre>
           </div>
 
           {/* Introduction Section */}
           <section className="space-y-6 text-terminal-green">
-            <p className="text-lg sm:text-xl terminal-glow">
-              $ ./introduce.sh
+            <p className="text-xl sm:text-2xl terminal-glow">
+              INTRODUCTION
             </p>
             <div className="ml-4 space-y-4">
-              <p className="text-base sm:text-lg">
-                Hello, Anthropic.
+              <p className="text-lg sm:text-xl">
+               My name is Andrew, and I'm applying for the role of
+                "Product Manager, Claude Code Growth."
               </p>
-              <p className="text-base sm:text-lg">
-                My name is Andrew Schauer, and I'm applying for the role of
-                Product Manager, Claude Code Growth.
-              </p>
-              <p className="text-sm sm:text-base opacity-90">
+              <p className="text-base sm:text-lg opacity-90">
                 I've spent the past few years at the intersection of product,
                 growth, and developer tools. Claude Code represents something
                 special—a chance to shape how millions of developers will
                 work with AI.
+              </p>
+              <p className="text-base sm:text-lg">
+                I'm also a HUGE Claude Code enthusiast.
+              </p>
+              <p className="text-base sm:text-lg">
+                Claude Code is already changing how engineering teams work, but I believe it will also change how EVERYONE ELSE works.
+                In fact, I just wrote an article about it.
               </p>
             </div>
           </section>
@@ -54,10 +58,10 @@ function App() {
 
           {/* Why This Role Section */}
           <section className="space-y-6 text-terminal-green">
-            <p className="text-lg sm:text-xl terminal-glow">
-              $ cat why_this_role.txt
+            <p className="text-xl sm:text-2xl terminal-glow">
+              WHY ME
             </p>
-            <div className="ml-4 space-y-4 text-sm sm:text-base opacity-90">
+            <div className="ml-4 space-y-4 text-base sm:text-lg opacity-90">
               <p>
                 [PLACEHOLDER: Add your compelling copy about why you're
                 interested in this specific role and what you bring to the table]
@@ -70,6 +74,7 @@ function App() {
                 <li>Relevant experience with developer tools</li>
                 <li>Understanding of AI's impact on development workflows</li>
                 <li>Vision for Claude Code's growth</li>
+
               </ul>
             </div>
           </section>
@@ -78,13 +83,14 @@ function App() {
 
           {/* Vision Section */}
           <section className="space-y-6 text-terminal-green">
-            <p className="text-lg sm:text-xl terminal-glow">
-              $ ./show_vision.sh
+            <p className="text-xl sm:text-2xl terminal-glow">
+              VISION
             </p>
-            <div className="ml-4 space-y-6 text-sm sm:text-base opacity-90">
+            <div className="ml-4 space-y-6 text-base sm:text-lg opacity-90">
+
               <p>
-                I've put together some thoughts on how Claude Code could evolve.
-                Check out the interactive prototype below to see concepts for:
+                I've been so inspired, I started designing a Claude Code enterprise B2B product that could help non-engineers use the incredible power of persistent context and MCPs.
+                Please explore the screens.
               </p>
               <ul className="ml-6 space-y-2 list-disc">
                 <li>Onboarding improvements</li>
@@ -104,13 +110,16 @@ function App() {
 
           {/* CTAs Section */}
           <section className="space-y-6 text-terminal-green pt-8 border-t border-terminal-green/30">
-            <p className="text-lg sm:text-xl terminal-glow">
-              $ ls -la ./connect
+            <p className="text-xl sm:text-2xl terminal-glow">
+              GET IN TOUCH
             </p>
             <div className="ml-4 space-y-4">
               <div className="flex flex-wrap gap-4">
                 <CTA href={SOCIAL_LINKS.linkedin}>
                   LinkedIn
+                </CTA>
+                <CTA href={SOCIAL_LINKS.professional}>
+                  Personal Site
                 </CTA>
                 <CTA href={SOCIAL_LINKS.github}>
                   GitHub

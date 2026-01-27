@@ -1,9 +1,9 @@
 // Update these URLs with your actual profiles
 export const SOCIAL_LINKS = {
-  linkedin: 'https://linkedin.com/in/yourprofile', // TODO: Update with real LinkedIn URL
-  github: 'https://github.com/yourusername', // TODO: Update with real GitHub URL
-  email: 'mailto:your.email@example.com', // TODO: Update with real email
-  portfolio: 'https://yourportfolio.com', // TODO: Update if you have a portfolio
+  linkedin: 'https://www.linkedin.com/in/andrewschauer/',
+  github: 'https://github.com/Diablopop',
+  email: 'mailto:diablopop@gmail.com',
+  professional: 'https://pinegiant.com',
 };
 
 export const RESUME_FILENAME = 'Andrew_Schauer_Resume.pdf';

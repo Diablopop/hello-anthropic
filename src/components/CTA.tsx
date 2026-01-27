@@ -13,7 +13,7 @@ export default function CTA({ href, children, download }: CTAProps) {
       download={download}
       className="inline-block px-6 py-3 border-2 border-terminal-green text-terminal-green
                  hover:bg-terminal-green hover:text-black transition-colors duration-200
-                 font-terminal text-lg terminal-glow"
+                 font-terminal text-xl terminal-glow"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
