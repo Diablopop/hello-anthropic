@@ -3,11 +3,9 @@ import type { PrototypeScreen } from './prototypeConfig';
 
 interface PrototypeFrameProps {
   screen: PrototypeScreen;
-  onClose?: () => void;
-  showCloseButton?: boolean;
 }
 
-export default function PrototypeFrame({ screen, onClose, showCloseButton }: PrototypeFrameProps) {
+export default function PrototypeFrame({ screen }: PrototypeFrameProps) {
   return (
     <motion.div
       className="relative max-w-md mx-auto"
@@ -15,17 +13,6 @@ export default function PrototypeFrame({ screen, onClose, showCloseButton }: Pro
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
     >
-      {/* Close button for mobile modal */}
-      {showCloseButton && onClose && (
-        <button
-          onClick={onClose}
-          className="absolute -top-10 right-0 text-terminal-green text-2xl
-                     hover:text-terminal-green/70 transition-colors z-10"
-        >
-          ✕
-        </button>
-      )}
-
       {/* Frame */}
       <div className="border-2 border-terminal-green/50 overflow-hidden
                       bg-transparent shadow-2xl">
