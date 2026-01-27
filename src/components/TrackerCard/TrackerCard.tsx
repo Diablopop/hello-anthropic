@@ -52,7 +52,7 @@ export default function TrackerCard() {
       ref={trackerRef}
       className="tracker-card hidden md:block fixed right-6 top-1/2 -translate-y-1/2
                  glass-terminal border border-terminal-green/30 rounded-lg p-4
-                 w-48 text-terminal-green z-50"
+                 w-56 text-terminal-green z-50"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 1 }}
