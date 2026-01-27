@@ -20,7 +20,7 @@ export function triggerLargeCelebration() {
   // Large pixelated confetti for CONSIDERATION status
   const count = 200;
   const defaults = {
-    origin: { y: 0.5 },
+    origin: { y: 0.5, x: 0.9 },
     colors: ['#00FF00', '#00AA00', '#00FF00'],
     shapes: ['square' as confetti.Shape],
     ticks: 200,

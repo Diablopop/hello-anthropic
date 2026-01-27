@@ -28,16 +28,16 @@ export default function PrototypeFrame({ screen, onClose, showCloseButton }: Pro
 
       {/* Frame */}
       <div className="border-2 border-terminal-green/50 overflow-hidden
-                      bg-black shadow-2xl">
+                      bg-transparent shadow-2xl">
         {/* Screen Title */}
-        <div className="bg-terminal-dark border-b border-terminal-green/30 px-4 py-2">
+        <div className="px-4 py-2">
           <p className="text-terminal-green text-sm font-terminal terminal-glow">
             {screen.title}
           </p>
         </div>
 
         {/* Screen Image */}
-        <div className="aspect-[2/3] bg-black">
+        <div className="aspect-[2/3]">
           <img
             src={screen.image}
             alt={screen.title}
@@ -46,7 +46,7 @@ export default function PrototypeFrame({ screen, onClose, showCloseButton }: Pro
         </div>
 
         {/* Description */}
-        <div className="bg-terminal-dark border-t border-terminal-green/30 px-4 py-2">
+        <div className="px-4 py-2">
           <p className="text-terminal-green text-xs font-terminal opacity-70">
             {screen.description}
           </p>

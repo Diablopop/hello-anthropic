@@ -22,7 +22,7 @@ function App() {
 
           {/* Terminal Header */}
           <div className="text-terminal-green terminal-glow">
-            <pre className="text-base sm:text-lg">
+            <pre className="text-xl sm:text-2xl">
 {`╔════════════════════════════╗
 ║     HELLO, ANTHROPIC       ║
 ╚════════════════════════════╝`}
@@ -39,16 +39,16 @@ function App() {
                My name is Andrew, and I'm applying for the role of
                 "Product Manager, Claude Code Growth."
               </p>
-              <p className="text-base sm:text-xl opacity-90">
+              <p className="text-lg sm:text-xl opacity-90">
                 I've spent the past few years at the intersection of product,
                 growth, and developer tools. Claude Code represents something
                 special—a chance to shape how millions of developers will
                 work with AI.
               </p>
-              <p className="text-base sm:text-lg">
+              <p className="text-lg sm:text-xl">
                 I'm also a HUGE Claude Code enthusiast.
               </p>
-              <p className="text-base sm:text-lg">
+              <p className="text-lg sm:text-xl">
                 Claude Code is already changing how engineering teams work, but I believe it will also change how EVERYONE ELSE works.
                 In fact, I just wrote an article about it.
               </p>
@@ -79,7 +79,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               WHY ME
             </p>
-            <div className="space-y-6 text-base sm:text-xl opacity-90">
+            <div className="space-y-6 text-lg sm:text-xl opacity-90">
               <p>
                 I've been so inspired, I started designing a Claude Code enterprise B2B product that could help non-engineers use the incredible power of persistent context and MCPs.
                 Please explore the screens.
@@ -107,7 +107,7 @@ function App() {
             </p>
 
             <div className="space-y-6">
-              <div className="space-y-4 text-base sm:text-lg opacity-90">
+              <div className="space-y-4 text-lg sm:text-xl opacity-90">
                 <p>
                   I hope it goes without saying that I'm a believer, and I think I'd be a great fit for this role. My experience telling compelling product stories, optimizing purchase funnels, and fostering customer loyalty can help Claude Code grow to the scale it rightfully deserves.
                 </p>
@@ -136,8 +136,7 @@ function App() {
           {/* Footer */}
           <footer className="pt-6 border-t border-terminal-green/30">
             <p className="text-xs opacity-70">
-              Status: READY | Time: {new Date().toLocaleString()} |
-              Location: ./anthropic_pitch | Built with Claude Code
+              Status: READY | Time: {new Date().toLocaleString()} | Built with Claude Code
             </p>
           </footer>
         </div>

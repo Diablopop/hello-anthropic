@@ -14,7 +14,7 @@ export const prototypeScreens: PrototypeScreen[] = [
   },
   {
     id: 'chat-with-expert',
-    title: 'Chat with an Expert',
+    title: 'Chat with an Agent',
     image: '/assets/prototype-2-chat-with-an-expert.webp',
     description: 'Connect non-engineers with AI-powered expert assistance',
   },

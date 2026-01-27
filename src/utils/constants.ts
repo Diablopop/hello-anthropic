@@ -17,5 +17,5 @@ export const STATUS_THRESHOLDS = {
 export const SCORE_WEIGHTS = {
   time: 0.5,
   scroll: 0.6,
-  clicks: 10,
+  clicks: 16,
 };
