@@ -98,8 +98,6 @@ function App() {
             </div>
           </section>
 
-          <ScrollArrow />
-
           {/* CTAs Section */}
           <section className="space-y-6 text-terminal-green pt-8 border-t border-terminal-green/30">
             <p className="text-xl sm:text-2xl terminal-glow">
@@ -115,6 +113,8 @@ function App() {
                   Thank you for your time.
                 </p>
               </div>
+
+              <ScrollArrow />
 
               <div className="flex flex-wrap gap-4">
                 <CTA href={SOCIAL_LINKS.linkedin}>
