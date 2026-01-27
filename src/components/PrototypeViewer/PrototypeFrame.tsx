@@ -27,7 +27,7 @@ export default function PrototypeFrame({ screen, onClose, showCloseButton }: Pro
       )}
 
       {/* Frame */}
-      <div className="border-2 border-terminal-green/50 rounded-lg overflow-hidden
+      <div className="border-2 border-terminal-green/50 overflow-hidden
                       bg-black shadow-2xl">
         {/* Screen Title */}
         <div className="bg-terminal-dark border-b border-terminal-green/30 px-4 py-2">

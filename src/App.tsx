@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import BackgroundPattern from './components/Layout/BackgroundPattern';
 import TerminalContainer from './components/Layout/TerminalContainer';
 import Logo from './components/Logo';
@@ -52,42 +53,33 @@ function App() {
                 In fact, I just wrote an article about it.
               </p>
             </div>
-          </section>
 
-          <ScrollArrow />
+            {/* Article CTA with arrow */}
+            <div className="flex items-center gap-4 mt-6">
+              <CTA href={SOCIAL_LINKS.article}>
+                Read the Article
+              </CTA>
+              <motion.img
+                src="/assets/arrow-down-straight.svg"
+                alt="Read article"
+                className="h-8 w-8"
+                style={{ rotate: '90deg' }}
+                animate={{ x: [-5, 5, -5] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+              />
+            </div>
+          </section>
 
           {/* Why This Role Section */}
           <section className="space-y-6 text-terminal-green">
             <p className="text-xl sm:text-2xl terminal-glow">
               WHY ME
             </p>
-            <div className="space-y-4 text-base sm:text-xl opacity-90">
-              <p>
-                [PLACEHOLDER: Add your compelling copy about why you're
-                interested in this specific role and what you bring to the table]
-              </p>
-              <p>
-                This could cover:
-              </p>
-              <ul className="ml-6 space-y-2 list-disc">
-                <li>Your product philosophy</li>
-                <li>Relevant experience with developer tools</li>
-                <li>Understanding of AI's impact on development workflows</li>
-                <li>Vision for Claude Code's growth</li>
-
-              </ul>
-            </div>
-          </section>
-
-          <ScrollArrow />
-
-          {/* Vision Section */}
-          <section className="space-y-6 text-terminal-green">
-            <p className="text-xl sm:text-2xl terminal-glow">
-              VISION
-            </p>
             <div className="space-y-6 text-base sm:text-xl opacity-90">
-
               <p>
                 I've been so inspired, I started designing a Claude Code enterprise B2B product that could help non-engineers use the incredible power of persistent context and MCPs.
                 Please explore the screens.
@@ -113,7 +105,17 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               GET IN TOUCH
             </p>
-            <div className="space-y-4">
+
+            <div className="space-y-6">
+              <div className="space-y-4 text-base sm:text-lg opacity-90">
+                <p>
+                  I hope it goes without saying that I'm a believer, and I think I'd be a great fit for this role. My experience telling compelling product stories, optimizing purchase funnels, and fostering customer loyalty can help Claude Code grow to the scale it rightfully deserves.
+                </p>
+                <p>
+                  Thank you for your time.
+                </p>
+              </div>
+
               <div className="flex flex-wrap gap-4">
                 <CTA href={SOCIAL_LINKS.linkedin}>
                   LinkedIn

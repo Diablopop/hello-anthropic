@@ -92,7 +92,7 @@ export default function PrototypeViewer() {
                     <button
                       key={screen.id}
                       onClick={() => handleScreenSelect(index)}
-                      className={`px-3 py-1 text-xs font-terminal border rounded
+                      className={`px-3 py-1 text-xs font-terminal border
                                 ${
                                   index === currentScreenIndex
                                     ? 'border-terminal-green bg-terminal-green text-black'
@@ -146,7 +146,7 @@ export default function PrototypeViewer() {
           <button
             key={screen.id}
             onClick={() => handleScreenSelect(index)}
-            className={`px-4 py-2 text-sm font-terminal border rounded transition-all
+            className={`px-4 py-2 text-sm font-terminal border transition-all
                       ${
                         index === currentScreenIndex
                           ? 'border-terminal-green bg-terminal-green text-black'

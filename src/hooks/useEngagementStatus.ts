@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { SCORE_WEIGHTS, STATUS_THRESHOLDS } from '../utils/constants';
 
 export type EngagementStatus = 'AWARENESS' | 'INTEREST' | 'CONSIDERATION';
 
@@ -29,20 +30,20 @@ export function useEngagementStatus(metrics: EngagementMetrics) {
   };
 
   useEffect(() => {
-    // Calculate engagement score: time × 0.5 + scroll × 2 + clicks × 3
+    // Calculate engagement score using weights from constants
     const calculatedScore =
-      metrics.timeOnSite * 0.5 +
-      metrics.scrollDepth * 2 +
-      metrics.clickCount * 3;
+      metrics.timeOnSite * SCORE_WEIGHTS.time +
+      metrics.scrollDepth * SCORE_WEIGHTS.scroll +
+      metrics.clickCount * SCORE_WEIGHTS.clicks;
 
     // Only increase score, never decrease
     setScore((prevScore) => Math.max(prevScore, calculatedScore));
 
     // Determine status based on score
     let newStatus: EngagementStatus = 'AWARENESS';
-    if (calculatedScore >= 200) {
+    if (calculatedScore >= STATUS_THRESHOLDS.CONSIDERATION) {
       newStatus = 'CONSIDERATION';
-    } else if (calculatedScore >= 80) {
+    } else if (calculatedScore >= STATUS_THRESHOLDS.INTEREST) {
       newStatus = 'INTEREST';
     }
 
@@ -58,7 +59,7 @@ export function useEngagementStatus(metrics: EngagementMetrics) {
   }, [metrics.timeOnSite, metrics.scrollDepth, metrics.clickCount]);
 
   // Calculate progress (0-10) for the progress tracker
-  const progress = Math.min(10, Math.floor((score / 200) * 10));
+  const progress = Math.min(10, Math.floor((score / STATUS_THRESHOLDS.CONSIDERATION) * 10));
 
   return {
     status,
