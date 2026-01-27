@@ -11,8 +11,10 @@ export function useScrollDepth() {
 
       const maxScroll = documentHeight - windowHeight;
       const depth = maxScroll > 0 ? Math.round((scrollTop / maxScroll) * 100) : 0;
+      const constrainedDepth = Math.min(100, Math.max(0, depth));
 
-      setScrollDepth(Math.min(100, Math.max(0, depth)));
+      // Only update if the new depth is greater than the current depth
+      setScrollDepth((prevDepth) => Math.max(prevDepth, constrainedDepth));
     };
 
     calculateScrollDepth();
