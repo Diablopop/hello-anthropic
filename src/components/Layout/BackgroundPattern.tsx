@@ -5,7 +5,6 @@ export default function BackgroundPattern() {
       style={{
         backgroundImage: `url(/assets/bg-image-seamless.webp)`,
         backgroundRepeat: 'repeat',
-        backgroundAttachment: 'fixed',
         backgroundSize: 'auto',
         backgroundColor: '#000',
       }}

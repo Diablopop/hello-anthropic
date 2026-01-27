@@ -53,12 +53,12 @@ export default function PrototypeViewer() {
         <AnimatePresence>
           {isModalOpen && (
             <motion.div
-              className="fixed inset-0 bg-black z-50 overflow-y-auto p-6"
+              className="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center p-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <div className="min-h-full flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center max-h-full">
                 <PrototypeFrame
                   screen={currentScreen}
                   onClose={closeModal}
