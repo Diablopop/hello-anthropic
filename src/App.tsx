@@ -33,7 +33,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               INTRODUCTION
             </p>
-            <div className="ml-4 space-y-4">
+            <div className="space-y-4">
               <p className="text-lg sm:text-xl">
                My name is Andrew, and I'm applying for the role of
                 "Product Manager, Claude Code Growth."
@@ -61,7 +61,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               WHY ME
             </p>
-            <div className="ml-4 space-y-4 text-base sm:text-lg opacity-90">
+            <div className="space-y-4 text-base sm:text-lg opacity-90">
               <p>
                 [PLACEHOLDER: Add your compelling copy about why you're
                 interested in this specific role and what you bring to the table]
@@ -86,7 +86,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               VISION
             </p>
-            <div className="ml-4 space-y-6 text-base sm:text-lg opacity-90">
+            <div className="space-y-6 text-base sm:text-lg opacity-90">
 
               <p>
                 I've been so inspired, I started designing a Claude Code enterprise B2B product that could help non-engineers use the incredible power of persistent context and MCPs.
@@ -113,7 +113,7 @@ function App() {
             <p className="text-xl sm:text-2xl terminal-glow">
               GET IN TOUCH
             </p>
-            <div className="ml-4 space-y-4">
+            <div className="space-y-4">
               <div className="flex flex-wrap gap-4">
                 <CTA href={SOCIAL_LINKS.linkedin}>
                   LinkedIn
