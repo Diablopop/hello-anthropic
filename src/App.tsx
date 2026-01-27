@@ -5,6 +5,7 @@ import ScrollArrow from './components/ScrollArrow';
 import CTA from './components/CTA';
 import TrackerCard from './components/TrackerCard/TrackerCard';
 import TrackerDrawer from './components/TrackerCard/TrackerDrawer';
+import PrototypeViewer from './components/PrototypeViewer/PrototypeViewer';
 
 function App() {
   return (
@@ -79,7 +80,7 @@ function App() {
             <p className="text-lg sm:text-xl terminal-glow">
               $ ./show_vision.sh
             </p>
-            <div className="ml-4 space-y-4 text-sm sm:text-base opacity-90">
+            <div className="ml-4 space-y-6 text-sm sm:text-base opacity-90">
               <p>
                 I've put together some thoughts on how Claude Code could evolve.
                 Check out the interactive prototype below to see concepts for:
@@ -90,9 +91,11 @@ function App() {
                 <li>Collaboration workflows</li>
                 <li>Growth opportunities</li>
               </ul>
-              <p className="text-xs opacity-70 mt-4">
-                [Prototype viewer will be added here in Milestone 3]
-              </p>
+            </div>
+
+            {/* Prototype Viewer */}
+            <div className="mt-8">
+              <PrototypeViewer />
             </div>
           </section>
 
