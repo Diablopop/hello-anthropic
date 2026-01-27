@@ -3,11 +3,15 @@ import TerminalContainer from './components/Layout/TerminalContainer';
 import Logo from './components/Logo';
 import ScrollArrow from './components/ScrollArrow';
 import CTA from './components/CTA';
+import TrackerCard from './components/TrackerCard/TrackerCard';
+import TrackerDrawer from './components/TrackerCard/TrackerDrawer';
 
 function App() {
   return (
     <>
       <BackgroundPattern />
+      <TrackerCard />
+      <TrackerDrawer />
       <TerminalContainer>
         <div className="space-y-8">
           {/* Logo */}
