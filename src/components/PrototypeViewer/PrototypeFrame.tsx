@@ -37,11 +37,11 @@ export default function PrototypeFrame({ screen, onClose, showCloseButton }: Pro
         </div>
 
         {/* Screen Image */}
-        <div className="aspect-[2/3] max-h-[60vh]">
+        <div>
           <img
             src={screen.image}
             alt={screen.title}
-            className="w-full h-full object-contain"
+            className="w-full max-h-[55vh] object-contain"
           />
         </div>
 
