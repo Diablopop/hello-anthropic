@@ -26,10 +26,12 @@ export default function PrototypeViewer() {
 
   const openModal = () => {
     setIsModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+    document.body.style.overflow = '';
   };
 
   // Mobile: Button to open modal
@@ -53,7 +55,7 @@ export default function PrototypeViewer() {
         <AnimatePresence>
           {isModalOpen && (
             <motion.div
-              className="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center p-4"
+              className="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center p-4 overflow-hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
