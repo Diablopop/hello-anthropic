@@ -7,7 +7,7 @@ export const SOCIAL_LINKS = {
   article: 'https://www.linkedin.com/pulse/scaling-markdown-age-ai-andrew-schauer-0jrjc/',
 };
 
-export const RESUME_FILENAME = 'Andrew_Schauer_Resume.pdf';
+export const RESUME_FILENAME = 'Andrew-Schauer-Anthropic-Resume.pdf';
 
 export const STATUS_THRESHOLDS = {
   INTEREST: 80,
