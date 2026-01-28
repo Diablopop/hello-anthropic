@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import BackgroundPattern from './components/Layout/BackgroundPattern';
 import TerminalContainer from './components/Layout/TerminalContainer';
 import Logo from './components/Logo';
@@ -33,7 +34,7 @@ function App() {
           <section className="space-y-6 text-terminal-green">
             <div className="space-y-4">
               <p className="text-base sm:text-lg opacity-80">
-                You've built something extraordinary. Now comes the work of growing and retaining the customer base.
+                You've built something extraordinary in Claude Code. Now comes the work of growing and retaining the customer base.
               </p>
               <p className="text-base sm:text-lg opacity-80">
                 For over 10 years, the focus of my career has been on building consumer confidence and telling compelling product stories. Recently, I led growth at Byte, helping the business achieve double-digit year-over-year growth. We optimized the funnel relentlessly by talking to customers, A/B testing, gathering insights, and developing stronger content.
@@ -135,6 +136,7 @@ function App() {
           </footer>
         </div>
       </TerminalContainer>
+      <Analytics />
     </>
   );
 }
