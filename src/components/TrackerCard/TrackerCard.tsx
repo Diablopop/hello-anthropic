@@ -94,7 +94,6 @@ export default function TrackerCard() {
         </div>
 
         <div className="pt-2 border-t border-terminal-green/30">
-          <p className="opacity-70 mb-2 text-center">Progress</p>
           <ProgressTracker progress={progress} />
         </div>
       </div>

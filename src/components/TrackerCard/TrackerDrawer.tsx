@@ -128,7 +128,6 @@ export default function TrackerDrawer() {
                 </div>
 
                 <div className="pt-3 border-t border-terminal-green/30">
-                  <p className="opacity-70 mb-3 text-center text-xs">Progress</p>
                   <ProgressTracker progress={progress} />
                 </div>
               </div>
