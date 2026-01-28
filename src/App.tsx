@@ -126,7 +126,7 @@ function App() {
                 <CTA href={SOCIAL_LINKS.github}>
                   GitHub
                 </CTA>
-                <CTA href="/assets/resume.pdf" download={RESUME_FILENAME}>
+                <CTA href="/assets/Andrew_Schauer_Anthropic_Resume.pdf" download={RESUME_FILENAME}>
                   Download Resume
                 </CTA>
               </div>
