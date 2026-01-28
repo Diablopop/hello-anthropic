@@ -8,7 +8,7 @@ interface PrototypeFrameProps {
 export default function PrototypeFrame({ screen }: PrototypeFrameProps) {
   return (
     <motion.div
-      className="relative max-w-md mx-auto"
+      className="relative max-w-md sm:max-w-xl mx-auto"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
@@ -28,7 +28,7 @@ export default function PrototypeFrame({ screen }: PrototypeFrameProps) {
           <img
             src={screen.image}
             alt={screen.title}
-            className="w-full max-h-[55vh] object-contain"
+            className="w-full max-h-[70vh] sm:max-h-[600px] object-contain"
           />
         </div>
 
