@@ -23,34 +23,29 @@ function App() {
           {/* Terminal Header */}
           <div className="text-terminal-green terminal-glow">
             <pre className="text-xl sm:text-2xl">
-{`╔════════════════════════════╗
-║     HELLO, ANTHROPIC       ║
-╚════════════════════════════╝`}
+{`╔══════════════════════════╗
+║     HELLO, ANTHROPIC     ║
+╚══════════════════════════╝`}
             </pre>
           </div>
 
           {/* Introduction Section */}
           <section className="space-y-6 text-terminal-green">
-            <p className="text-xl sm:text-2xl terminal-glow">
-              INTRODUCTION
-            </p>
             <div className="space-y-4">
-              <p className="text-lg sm:text-xl">
-               My name is Andrew, and I'm applying for the role of
-                "Product Manager, Claude Code Growth."
+              <p className="text-base sm:text-lg opacity-80">
+                You've built something extraordinary. Now comes the work of growing and retaining the customer base.
               </p>
-              <p className="text-lg sm:text-xl opacity-90">
-                I've spent the past few years at the intersection of product,
-                growth, and developer tools. Claude Code represents something
-                special—a chance to shape how millions of developers will
-                work with AI.
+              <p className="text-base sm:text-lg opacity-80">
+                For over 10 years, the focus of my career has been on building consumer confidence and telling compelling product stories. Recently, I led growth at Byte, helping the business achieve double-digit year-over-year growth. We optimized the funnel relentlessly by talking to customers, A/B testing, gathering insights, and developing stronger content.
               </p>
-              <p className="text-lg sm:text-xl">
-                I'm also a HUGE Claude Code enthusiast.
+              <p className="text-base sm:text-lg opacity-80">
+                Our decisions were based on data, and the partnership between design, product, and engineering led to incredible results. Byte's website reached over a million monthly visitors, and revenue nearly doubled during my time there. I've had successes with other brands too, but my experience isn't the only reason I'm suited for this role...
               </p>
-              <p className="text-lg sm:text-xl">
-                Claude Code is already changing how engineering teams work, but I believe it will also change how EVERYONE ELSE works.
-                In fact, I just wrote an article about it.
+              <p className="text-base sm:text-lg font-bold">
+                I'm also a huge Claude Code enthusiast.
+              </p>
+              <p className="text-base sm:text-lg opacity-80">
+                Claude Code is already changing how engineering teams work, but I believe it will soon change how everyone else works. In fact, I just wrote an article about it.
               </p>
             </div>
 
@@ -74,40 +69,39 @@ function App() {
             </div>
           </section>
 
-          {/* Why This Role Section */}
-          <section className="space-y-6 text-terminal-green">
+          {/* Inspiration Section */}
+          <section className="space-y-6 text-terminal-green pt-8">
             <p className="text-xl sm:text-2xl terminal-glow">
-              WHY ME
+              INSPIRATION
             </p>
-            <div className="space-y-6 text-lg sm:text-xl opacity-90">
+            <div className="space-y-6 text-base sm:text-lg opacity-80">
               <p>
-                I've been so inspired, I started designing a Claude Code enterprise B2B product that could help non-engineers use the incredible power of persistent context and MCPs.
-                Please explore the screens.
+                I'm so excited by the opportunity Claude Code brings to the workplace that I started brainstorming an Anthropic B2B product that could help non-engineers use the incredible power of persistent context and connected systems.
               </p>
-              <ul className="ml-6 space-y-2 list-disc">
-                <li>Onboarding improvements</li>
-                <li>Feature discovery enhancements</li>
-                <li>Collaboration workflows</li>
-                <li>Growth opportunities</li>
-              </ul>
             </div>
 
             {/* Prototype Viewer */}
             <div className="mt-8">
               <PrototypeViewer />
             </div>
+
+            <div className="text-base sm:text-lg opacity-80">
+              <p>
+                This may or may not be a worthwhile idea—only talking to customers can reveal that—but I believe Claude Code is perfectly positioned to accelerate Anthropic's already meteoric growth.
+              </p>
+            </div>
           </section>
 
           {/* CTAs Section */}
-          <section className="space-y-6 text-terminal-green pt-8 border-t border-terminal-green/30">
+          <section className="space-y-6 text-terminal-green pt-8">
             <p className="text-xl sm:text-2xl terminal-glow">
               GET IN TOUCH
             </p>
 
             <div className="space-y-6">
-              <div className="space-y-4 text-lg sm:text-xl opacity-90">
+              <div className="space-y-4 text-base sm:text-lg opacity-80">
                 <p>
-                  I hope it goes without saying that I'm a believer, and I think I'd be a great fit for this role. My experience telling compelling product stories, optimizing purchase funnels, and fostering customer loyalty can help Claude Code grow to the scale it rightfully deserves.
+                  I think I'd be a great fit for this role. My experience crafting impactful product stories, optimizing purchase funnels, and fostering retention for brands can help Claude Code grow to the scale it rightfully deserves.
                 </p>
                 <p>
                   Thank you for your time.
