@@ -8,7 +8,7 @@ export default function ScrollArrow() {
   });
 
   return (
-    <div ref={ref} className="flex justify-center py-8">
+    <div ref={ref} className="flex justify-center pt-8 pb-3">
       {inView && (
         <motion.img
           src="/assets/arrow-down-straight.svg"
