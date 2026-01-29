@@ -1,16 +1,16 @@
-<svg width="111" height="65" viewBox="0 0 111 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="105" height="65" viewBox="0 0 105 65" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_9_85)">
-<rect x="104" y="14" width="7" height="12" fill="#EC9A9A"/>
-<path d="M104 50H13V0H104V50ZM26 14V25H33V14H26ZM78 25H85V14H78V25Z" fill="#C2797A"/>
+<rect x="98" y="14" width="7" height="12" fill="#EC9A9A"/>
+<path d="M98 50H7V0H98V50ZM20 14V25H27V14H20ZM72 25H79V14H72V25Z" fill="#C2797A"/>
 <rect y="14" width="7" height="12" fill="#EC9A9A"/>
-<rect x="26" y="53" width="7" height="12" fill="#EC9A9A"/>
-<rect x="39" y="53" width="7" height="12" fill="#EC9A9A"/>
-<rect x="65" y="53" width="7" height="12" fill="#EC9A9A"/>
-<rect x="78" y="53" width="7" height="12" fill="#EC9A9A"/>
+<rect x="20" y="53" width="7" height="12" fill="#EC9A9A"/>
+<rect x="33" y="53" width="7" height="12" fill="#EC9A9A"/>
+<rect x="59" y="53" width="7" height="12" fill="#EC9A9A"/>
+<rect x="72" y="53" width="7" height="12" fill="#EC9A9A"/>
 </g>
 <defs>
 <clipPath id="clip0_9_85">
-<rect width="111" height="65" fill="white"/>
+<rect width="105" height="65" fill="white"/>
 </clipPath>
 </defs>
 </svg>
