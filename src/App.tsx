@@ -112,7 +112,7 @@ function App() {
               <ScrollArrow />
 
               <div className="sm:text-center -mt-4">
-                <p className="text-base sm:text-lg font-bold">ANDREW SCHAUER</p>
+                <p className="text-2xl sm:text-3xl font-bold">ANDREW SCHAUER</p>
                 <p className="text-base sm:text-lg opacity-80">(213) 840-7168</p>
               </div>
 
